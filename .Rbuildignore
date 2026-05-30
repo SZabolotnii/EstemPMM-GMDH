@@ -1,0 +1,10 @@
+^\.github$
+^\.gitignore$
+^REPOSITORY_SETUP\.md$
+^experiments$
+^data$
+^.*\.Rproj$
+^\.Rproj\.user$
+^README_files$
+^.*\.tar\.gz$
+^.*\.Rcheck$

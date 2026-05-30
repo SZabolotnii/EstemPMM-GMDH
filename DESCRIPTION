@@ -1,0 +1,30 @@
+Package: gmdhpmm
+Title: GMDH with EstemPMM-Based Cumulant-Adaptive Estimation
+Version: 0.1.0
+Authors@R: c(
+    person("Serhii", "Zabolotnii",
+           email = "zabolotniua@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0242-2234")))
+Description: Implements cumulant-adaptive Group Method of Data Handling
+    ('GMDH') models whose inner coefficient-estimation step dispatches between
+    least squares and Polynomial Maximization Method estimators ('PMM2' and
+    'PMM3') from the 'EstemPMM' package. The package adds bootstrap-stabilized
+    residual cumulant diagnostics for small GMDH partitions, per-partial-model
+    estimator dispatch inside the self-organized tournament, reserve-aware
+    external criteria, robust baseline estimators, and experimental weak-moment
+    extensions.
+License: GPL-3
+Encoding: UTF-8
+Imports:
+    methods,
+    stats,
+    utils,
+    data.table,
+    EstemPMM
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/SZabolotnii/EstemPMM-GMDH
+BugReports: https://github.com/SZabolotnii/EstemPMM-GMDH/issues
+Config/roxygen2/version: 8.0.0

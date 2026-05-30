@@ -1,0 +1,26 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*.tar.gz
+*.Rcheck/
+*.Rproj
+*.aux
+*.log
+*.out
+*.pdf
+
+# Generated experiment outputs. Keep curated CSV snapshots explicitly if needed.
+experiments/results/*.png
+experiments/results/*_raw.csv
+experiments/results/*_predictions.csv
+experiments/results/*_calibration.csv
+
+# Local/private data are not part of the initial repository payload.
+data/*.csv
+data/*.rds
+data/*.rda
+data/*.parquet
+data/raw/
+data/external/
