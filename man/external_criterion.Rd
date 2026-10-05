@@ -9,7 +9,7 @@ external_criterion(
   yhat_val,
   method = "LSE",
   diag = NULL,
-  type = c("MSE", "PMM-loss", "reserve-aware", "spike-aware"),
+  type = c("MSE", "MAE", "PMM-loss", "reserve-aware", "spike-aware"),
   reserve_weight = 1,
   tail_weight = 2,
   overreserve_weight = 0.25,

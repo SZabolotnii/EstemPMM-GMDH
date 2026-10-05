@@ -1,0 +1,8 @@
+bibentry(
+  bibtype = "Manual",
+  title = "{gmdhpmm}: Group Method of Data Handling with Polynomial Maximization Method Estimators",
+  author = person("Serhii", "Zabolotnii"),
+  year = "2026",
+  note = "R package version 0.2.0",
+  url = "https://github.com/SZabolotnii/EstemPMM-GMDH"
+)

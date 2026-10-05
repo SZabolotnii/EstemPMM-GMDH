@@ -1,6 +1,6 @@
 # KG-2 partial model: the order-2 Kolmogorov-Gabor polynomial in two variables
 #   P(v1, v2; theta) = th0 + th1 v1 + th2 v2 + th3 v1 v2 + th4 v1^2 + th5 v2^2
-# The coefficient vector theta is always stored in
+# (problem-statement.md 3.1). The coefficient vector theta is always stored in
 # the canonical order below so the cascade can predict deterministically.
 
 # Canonical coefficient order (matches the lm() design built by kg2_design()).

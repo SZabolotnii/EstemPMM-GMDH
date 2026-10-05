@@ -1,21 +1,30 @@
 Package: gmdhpmm
-Title: GMDH with EstemPMM-Based Cumulant-Adaptive Estimation
-Version: 0.1.0
-Authors@R: c(
+Type: Package
+Title: Group Method of Data Handling with Polynomial Maximization Method Estimators
+Version: 0.2.0
+Date: 2026-10-05
+Authors@R:
     person("Serhii", "Zabolotnii",
            email = "zabolotniua@gmail.com",
            role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-0242-2234")))
-Description: Implements cumulant-adaptive Group Method of Data Handling
-    ('GMDH') models whose inner coefficient-estimation step dispatches between
-    least squares and Polynomial Maximization Method estimators ('PMM2' and
-    'PMM3') from the 'EstemPMM' package. The package adds bootstrap-stabilized
-    residual cumulant diagnostics for small GMDH partitions, per-partial-model
-    estimator dispatch inside the self-organized tournament, reserve-aware
-    external criteria, robust baseline estimators, and experimental weak-moment
-    extensions.
+           comment = c(ORCID = "0000-0003-0242-2234"))
+Description:
+    Implements multilayer Group Method of Data Handling ('GMDH') regression whose
+    inner coefficient-estimation step chooses an estimator for each partial model
+    inside the self-organizing tournament. The library contains least squares,
+    ridge least squares, Huber, least absolute deviations, the Polynomial
+    Maximization Method estimators 'PMM2' and 'PMM3' from the 'EstemPMM' package,
+    and windowed (weak-moment) 'PMM' estimators that remain stable under heavy
+    tails. The estimator is chosen either by a residual-cumulant dispatch with
+    bootstrap stabilization on small partitions, or by a validation gate that
+    compares the candidates by inner cross-validation (random or blocked folds).
+    Also provides reserve-aware external criteria and loaders for open drilling
+    datasets.
 License: GPL-3
+URL: https://github.com/SZabolotnii/EstemPMM-GMDH
+BugReports: https://github.com/SZabolotnii/EstemPMM-GMDH/issues
 Encoding: UTF-8
+Depends: R (>= 3.5.0)
 Imports:
     methods,
     stats,
@@ -25,6 +34,4 @@ Imports:
 Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-URL: https://github.com/SZabolotnii/EstemPMM-GMDH
-BugReports: https://github.com/SZabolotnii/EstemPMM-GMDH/issues
 Config/roxygen2/version: 8.0.0

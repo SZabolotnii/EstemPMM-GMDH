@@ -1,10 +1,4 @@
 ^\.github$
-^\.gitignore$
-^REPOSITORY_SETUP\.md$
-^experiments$
-^data$
+^LICENSE\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^README_files$
-^.*\.tar\.gz$
-^.*\.Rcheck$
